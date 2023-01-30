@@ -1,0 +1,20 @@
+import React from 'react';
+// import Header from '../components/layout/Header';
+import Header from './Header';
+// import Footer from '../components/layout/Footer';
+import Footer from './Footer';
+import Banner from '../components/layout/partials/Banner';
+
+const LayoutDefault = ({ children }) => (
+  <>
+    {/* <Header navPosition="right" className="reveal-from-bottom" /> */}
+    <Header />
+    <main className="site-content">
+      {children}
+    </main>
+    {/* <Banner /> */}
+    <Footer />
+  </>
+);
+
+export default LayoutDefault;  
